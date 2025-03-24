@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 24px;
+    font-family: 'Poppins';;
+}
+
+#head {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.882);
+}
+
+
+#navbar {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#menu {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    width: 60%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 5%    ;
+    float: left;
+}
+
+.list-item {
+    text-decoration: none;
+    display: flex;
+    margin: 5px;
+}
+
+.list-item a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 24px;
+}
+
+.search-bar {
+    display: flex;
+    float: right;
+    padding-left: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar [type="text"] {
+    width: 150px;
+    height: 40px;
+    padding-left: 30px;
+    font-size: 24px;
+    background-color: grey;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.search-bar img {
+    margin-right: -30px;
+    z-index: 1;
+    filter: white;
+}
+
+.search-bar ::placeholder {
+    color: white;
+}
+
+#banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-video {
+    z-index: -1;
+}
+
+.institute {
+    border: 3px solid #F3BD00;
+    border-top: none;
+    width: 640px;
+    height: 50px;
+    border-radius: 0 0 20px 20px;
+    background-color: #FFF0BB;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+}
+
+#about {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#about-me {
+    display: flex;
+    gap: 5%;
+}
+
+.profile-img {
+    min-width: 55%;
+    margin-top: -500px;
+    z-index: 1;
+}
+
+.description {
+    min-width: 40%;
+    min-width: auto;
+    padding-top: 50px;
+}
+
+.description h1 {
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+.description h4 {
+    font-weight: 100px;
+    font-size: 25px;
+}
+
+.description p {
+    color: #555555;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.description h2, h4, p {
+    padding: 5px 0;
+}
+
+#download {
+    width: 200px;
+    height: 45px;
+    background-color: #0948B4;
+    border: 1px #0948B4;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+#see-my-work {
+    width: 150px;
+    height: 45px;
+    background-color: white;
+    border: 2px solid #0948B4;
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+}
+
+
+
+.courses {
+    display: block;
+    border: 1px solid white;
+    height: auto;
+    /* margin-left: 10%; */
+    margin-top: -130px;
+    padding: 50px 10px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 5px 5px 5px lightgray;
+    z-index: 1;
+    font-size: 24px;
+}
+
+.courses h2 {
+    border-bottom: 2px solid black;
+    margin: 0 10%;
+}
+
+.courses hr {
+    width: 800px;
+    border-bottom: 2px solid black;
+}
+
+.developer {
+    padding: 0 20px;
+}
+
+#expertise-skills {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+}
+
+
+.expertise {
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    border: 2px solid white;
+    border-radius: 20px;    
+    box-shadow: 0px 5px 5px 5px lightgray;
+    
+}
+
+
+#expertise-content {
+    width: 60%;
+    padding-top: 5px;
+    /* font-size: 24px */
+}
+
+#expertise-content p {
+    color: #555555;
+    font-size: 20px;
+}
+
+#title {
+    font-size: 40px;
+}
+
+#tech-skills {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+}
+
+#tech-icons {
+    display: flex;
+    text-align: center;
+}
+
+.items {
+    margin-top: 30px;
+    flex: auto;
+}
+
+
+
+#soft-skills-icons {
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;    
+    box-shadow: 0px 5px 5px 5px lightgray;
+}
+
+.soft-skills-items {
+    margin-top: 30px;
+    flex: auto;
+}
+
+#projects {
+    margin-left: 10%;
+    margin-top: 100px;
+}
+
+.projects-cards {
+    margin-top: 30px;
+    display: flex;
+    align-self: center;
+}
+
+.cards-button {
+    width: 355px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight:bold;
+    background-color: #0948B4;
+    border: 1px #0948B4;
+    color: white;
+    border-radius: 10px;
+}
+
+.cards {
+    flex: auto;
+    width: 370px;
+    /* font-size: 18px; */
+}
+
+.cards-project h4 {
+    font-size: 24px;
+}
+
+.cards-project p {
+    color: #555555;
+    font-size: 18px;
+}
+
+.cards-project {
+    width: 370px;
+    border: 2px solid white;
+    padding-left: 6px;
+    align-content: end;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 5px lightgray;
+}
+
+/* .cards-project:hover {
+    width: 370px;
+    height: 548px;
+    border: 2px solid white;
+    padding-left: 6px;
+    align-content: end;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 5px lightgray;
+} */
+
+
+#experience-section {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+}
+
+.experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.experience-1 {
+    flex: auto;
+
+}
+
+.company {
+    width: 590px;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 188px;
+    display: flex;
+    /* font-size: 16px; */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 5px 5px lightgray;
+}
+
+.company-description h2 {
+    font-size: 24px;
+}
+
+.company-description p {
+    font-size: 20px;
+    color: #555555;
+}
+
+.company-description h5 {
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+ .company-img {
+    padding-left: 25px;
+ }
+
+ .company-img img {
+    padding-left: 25px;
+ }
+
+ .company-btn {
+    width: 261px;
+    font-size: 18px;
+    padding: 5px 0;
+    font-weight: bold;
+    background-color: #0948B4;
+    border: 1px #0948B4;
+    color: white;
+    border-radius: 10px;
+ }
+
+ .company-name {
+    padding-bottom: 5px;
+ }
+
+#qualification-section {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+}
+
+.qualification {
+    display: flex;
+    margin-top: 30px;
+}
+
+.qualification-details {
+    flex: 50%;
+}
+
+.qualification-details p {
+    margin-top: -50px;
+    margin-left: 40px;
+    color: #555555;
+    font-size: 20px;
+}
+
+
+.qualification-details ul li {
+    min-width: 90%;
+    float: right;
+    padding: 20px 0;
+    list-style: none;
+    position: relative;
+}
+
+
+#qualification-list li::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    left: -40px;
+    top: 35px;
+    background-color: black;
+
+}
+
+#qualification-list li::after {
+    content: "";
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    left: -30px;
+    top: 35px;
+    background-color: black;
+
+}
+
+#qualification-list li:last-of-type::after {
+    display: none;
+}
+
+#qualification-list span {
+    color: #555555;
+    font-size: 20px;
+}
+
+
+
+footer{
+    margin-top: 200px;
+    width: 100%;
+    height: 366px;
+    background-color: black;
+    color: white;
+}
+
+.foot-details {
+    position: relative;
+    top: -150px;
+    text-align: center;
+}
+
